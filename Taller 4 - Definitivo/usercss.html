@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Resgistro Usuario</title>
+    <meta name="viewport" content="width=device-width,
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Registrarse</h1>
+      <form action="" class="formulario" id="formulario">
+        
+        <div class="main-user-info">
+
+          <div class="user-input-box">
+            <label for="Nombre" class="formulario_label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingerese Nombre" maxlength="35"/>
+            <span id="nombre"></span>
+          </div>
+
+          <div class="user-input-box">
+            <label for="Apellido">Apellido</label>
+            <input type="text" id="Apellido" name="Apellido" placeholder=" Ingrese Apellido" maxlength="35"/>
+            <span id="Apellido"></span> 
+          </div>
+
+          <div class="user-input-box">
+            <label for="Direccion">Dirección</label>
+            <input type="text" id="Direccion" name="Direccion" maxlength="120"/>
+            <span id="Direccion"></span>       
+          </div>
+          
+          <div class="user-input-box">
+            <label for="Usuario">Usuario</label>
+            <input type="text" id="Usuario" name="Usuario" placeholder="Ingrese Usuario" maxlength="30"/>
+            <span id="Usuario"></span>
+          </div>
+
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese Email" maxlength="150"/>
+            <span id="Email"></span>
+          </div>
+
+          <div class="user-input-box">
+            <label for="Telefono">Telefono</label>
+            <input type="text" id="Telefono" name="Telefono" placeholder="Ingrese Telefono"/>
+            <span id="Telefono"></span>
+          </div>
+          <div class="user-input-box">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" maxlength="35"/>
+            <span id="password"></span>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword" >Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" maxlength="35"/>
+            <span id="confirmPassword"></span>
+          </div>
+
+          <div class="user-input-box-seleccion">
+            <label>Color Favorito:</label>
+            <input type="radio" id="Rojo" name="grupo1">Rojo
+            <input type="radio" id="Azul" name="grupo1" value="Azul">Azul
+            <input type="radio" id="Negro" name="grupo1" value="Negro">Negro
+            <input type="radio" id="Blanco" name="grupo1" value="Blanco">Blanco
+          </div>
+
+
+          <div class="user-input-box-seleccion">
+            <label>Marca de Carro:</label>
+            <input type="radio" id="Hyundai" name="grupo1">Hyundai
+            <input type="radio" id="Ferrari" name="grupo1" value="Ferrari">Ferrari
+            <input type="radio" id="Buggati" name="grupo1" value="Buggati">Bugatti
+            <input type="radio" id="Mustang" name="grupo1" value="Mustang">Ford
+          </div>
+
+          <div class="user-input-box-seleccion">
+            <label>Estilo de Carro:</label>
+            <input type="radio" id="Convertible" name="grupo1">Convertible
+            <input type="radio" id="Deportivo" name="grupo1" value="Deportivo">Deportivo
+            <input type="radio" id="Vehiculos_Comerciales" name="grupo1" value="Vehiculos_Comerciales">Escarabajo
+            <input type="radio" id="SUV" name="grupo1" value="SUV"> SUV
+          </div>
+
+          <div class="user-input-box-seleccion">
+            <label>Modelo de Carro:</label>
+            <input type="radio" id="I20" name="grupo1"> I20
+            <input type="radio" id="Ferrari_BR20" name="grupo1" value="Ferrari_BR20"> Ferrari BR20
+            <input type="radio" id="Vehiculos_Comerciales" name="grupo1" value="Vehiculos_Comerciales">Chiron
+            <input type="radio" id="Mustang" name="grupo1" value="Mustang">Mustang
+          </div><br>
+
+          <div class="user-input-box">
+            <label>¿Cuánto está dispuesto a gastar en un carro?</label>
+            <input type="range" id="rango" name="rango" min="0" max="10000" value="0"><br>
+            <output for="rango" id="valor">0</output>
+            <span id="rango"></span>
+          </div>
+
+        </div>
+
+          <div class="form-submit-btn">
+          <button type="submit" class="form_btn">Enviar</button>
+        </div>
+
+      </form>
+    </div>
+
+    <script src="js/formulario.js"></script>
+
+  </body>
+</html>
